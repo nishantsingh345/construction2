@@ -9,9 +9,13 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleMenu = () => {
+    console.log("hello tooglee");
+
+    setMenuOpen(!menuOpen);
+  };
   return (
-    <div className="w-full">
+    <div className="w-full bg-white">
       <Section>
         <nav>
           {/* Desktop Menue */}
@@ -35,12 +39,17 @@ const Navbar = (props: Props) => {
             </div>
 
             <div className="bg-yellow-400 text-white font-semibold hover:bg-yellow-500 px-3 py-1 rounded-lg cursor-pointer ease-in-out duration-300">
-              Apply
+                Apply
             </div>
 
             {/* Mobile menue */}
 
-            <div onClick={toggleMenu} className="md:hidden cursor-pointer ">
+            <div
+              onClick={() => {
+                toggleMenu();
+              }}
+              className="md:hidden cursor-pointer "
+            >
               <BsList className="w-8 h-8" />
             </div>
           </div>

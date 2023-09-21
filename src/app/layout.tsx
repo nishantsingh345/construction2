@@ -15,16 +15,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <div className="flex min-h-screen flex-col justify-between">
-        <div>
-          <TopNav />
-          <div className="sticky top-0 z-50">
-            <Navbar />
+      <body>
+        <div className="flex min-h-screen flex-col justify-between">
+          <div>
+            <TopNav />
+            <div className="sticky top-0 z-50">
+              <Navbar />
+            </div>
+            <main>{children}</main>
+            <Footer />
           </div>
-          <main>{children}</main>
-          <Footer />
         </div>
-      </div>
+      </body>
     </html>
   );
 }

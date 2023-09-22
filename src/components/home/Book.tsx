@@ -44,7 +44,7 @@ const Book = (props: Props) => {
             {card.map((item, index) => (
               <div
                 key={index}
-                className="border-2 rounded-2xl w-[225px] h-[120px] bg-white border-[#ff5e14] relative  px-2"
+                className="border-2 rounded-2xl w-[225px] h-[120px] bg-white border-[#ff5e14] relative  px-2 mx-auto"
               >
                 <div>
                   <p className="flex items-center justify-center text-black font-bold pt-12">

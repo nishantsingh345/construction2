@@ -1,4 +1,5 @@
 import Navbar from "@/components/common/Navbar";
+import Book from "@/components/home/Book";
 import Hero from "@/components/home/Hero";
 import Who from "@/components/home/Who";
 // import { Button } from "@/components/ui/button";
@@ -8,6 +9,7 @@ export default function Home() {
     <div>
       <Hero />
       <Who />
+      <Book />
     </div>
   );
 }

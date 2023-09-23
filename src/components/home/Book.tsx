@@ -40,7 +40,7 @@ const Book = (props: Props) => {
               alt=""
             />
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
             {card.map((item, index) => (
               <div
                 key={index}

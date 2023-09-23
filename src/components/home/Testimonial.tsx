@@ -41,6 +41,12 @@ const data = [
     title: "first slide",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, modi odio reprehenderit deserunt facilis sapiente recusandae? Quibusdam deleniti perferendis officiis?",
   },
+  {
+    id: 4,
+    immg: "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png",
+    title: "first slide",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, modi odio reprehenderit deserunt facilis sapiente recusandae? Quibusdam deleniti perferendis officiis?",
+  },
 ];
 
 const Testimonial = (props: Props) => {
@@ -54,11 +60,11 @@ const Testimonial = (props: Props) => {
           </p>
         </div>
         <Swiper
-          modules={[Navigation, Scrollbar, A11y, Autoplay]}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
           //   navigation
-        //   pagination={{ clickable: true }}
+          pagination={{ clickable: true }}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
@@ -68,9 +74,9 @@ const Testimonial = (props: Props) => {
             <SwiperSlide key={index}>
               <div className=" flex flex-col md:flex-row items-center gap-5 md:mx-10">
                 <img className="w-1/4" src={item?.immg} alt={item?.title} />
-                <div className="flex flex-col items-center justify-center gap-4">
+                <div className="flex flex-col items-start  gap-4">
                   <p className="font-bold text-xl">{item?.title}</p>
-                  <p className="text-center">{item?.text}</p>
+                  <p className="">{item?.text}</p>
                   <div className="flex items-center text-3xl text-yellow-500">
                     <FaStar />
                     <FaStar />

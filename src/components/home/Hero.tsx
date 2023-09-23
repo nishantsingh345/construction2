@@ -33,7 +33,7 @@ const Hero = (props: Props) => {
         }}
         //   scrollbar={{ draggable: true }}
         //   onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
           <img className="w-full " src="/hero/HB-1-3.webp" alt="" />

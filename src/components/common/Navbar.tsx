@@ -30,7 +30,7 @@ const Navbar = (props: Props) => {
                   <Link href="/"> Home</Link>
                 </li>
                 <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
-                  <Link href="/"> About</Link>
+                  <Link href="/about"> About</Link>
                 </li>
                 <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
                   <Link href="/contact"> Contact</Link>
@@ -79,7 +79,7 @@ const Navbar = (props: Props) => {
                   onClick={() => setMenuOpen(false)}
                   className="uppercase py-4  border-b border-[#040f28] hover:border-orange-500  text-xl cursor-pointer"
                 >
-                  <Link href="/"> About</Link>
+                  <Link href="/about"> About</Link>
                 </li>
                 <li
                   onClick={() => setMenuOpen(false)}

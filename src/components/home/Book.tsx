@@ -29,7 +29,7 @@ const card = [
 
 const Book = (props: Props) => {
   return (
-    <div className="py-10 bg-[#040f28]/20">
+    <div className="py-10 bg-[#040f28]/70">
       <Section>
         <div>
           <div>

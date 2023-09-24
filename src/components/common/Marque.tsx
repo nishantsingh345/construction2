@@ -10,7 +10,7 @@ const Marque = (props: Props) => {
       <Section>
         <div className="py-12">
           <p className="text-center font-bold text-2xl text-[#ff5e14] pb-4">Our Partners</p>
-          <Marquee className="">
+          <Marquee pauseOnHover className="">
             <div className="mx-4 w-48">
               <img src="/logo1.jpeg" alt="" />
             </div>

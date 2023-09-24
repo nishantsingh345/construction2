@@ -1,3 +1,4 @@
+import Apply from "@/components/common/Apply";
 import Hero from "@/components/common/Hero";
 import Cards from "@/components/contact/Cards";
 import ContactForm from "@/components/contact/ContactForm";
@@ -11,6 +12,7 @@ const page = (props: Props) => {
       <Hero name="Contact Us" />
       <Cards />
       <ContactForm />
+      <Apply />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../common/Section";
+import Link from "next/link";
 
 type Props = {};
 
@@ -21,11 +22,11 @@ const Who = (props: Props) => {
               prominent consulting firms in the UK which gives appropriate information in the
               construction industry to make the site safer and risk-free.
             </p>
-            <div>
-              <button className="bg-yellow-400 text-white font-semibold hover:bg-yellow-500 px-3 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
+            <Link href="/about">
+              <button className="bg-[#ff5e14]  hover:bg-[#ff5e14]/90 text-white font-semibold  px-3 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
                 Read More
               </button>
-            </div>
+            </Link>
           </div>
         </div>
       </Section>

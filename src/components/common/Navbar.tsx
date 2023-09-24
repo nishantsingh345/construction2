@@ -21,25 +21,25 @@ const Navbar = (props: Props) => {
           {/* Desktop Menue */}
           <div className="flex items-center justify-between py-5">
             <Link href="/">
-             <img className="w-48" src="/logo1.jpeg" alt="" />
+              <img className="w-48" src="/logo1.jpeg" alt="" />
             </Link>
 
             <div className="text-black md:flex hidden">
               <ul className="flex items-center">
-                <li className="uppercase  border-b border-black hover:border-orange-500 ml-10 text-xl cursor-pointer">
+                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
                   <Link href="/"> Home</Link>
                 </li>
-                <li className="uppercase  border-b border-black hover:border-orange-500 ml-10 text-xl cursor-pointer">
+                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
                   <Link href="/"> About</Link>
                 </li>
-                <li className="uppercase  border-b border-black hover:border-orange-500 ml-10 text-xl cursor-pointer">
-                  <Link href="/"> Contact</Link>
+                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
+                  <Link href="/contact"> Contact</Link>
                 </li>
               </ul>
             </div>
 
             <div className="bg-yellow-400 text-white font-semibold hover:bg-yellow-500 px-3 py-1 rounded-lg cursor-pointer ease-in-out duration-300">
-                Apply
+              Apply
             </div>
 
             {/* Mobile menue */}
@@ -71,21 +71,21 @@ const Navbar = (props: Props) => {
               <ul>
                 <li
                   onClick={() => setMenuOpen(false)}
-                  className="uppercase py-4  border-b border-black hover:border-orange-500  text-xl cursor-pointer"
+                  className="uppercase py-4  border-b border-[#040f28] hover:border-orange-500  text-xl cursor-pointer"
                 >
                   <Link href="/"> Home</Link>
                 </li>
                 <li
                   onClick={() => setMenuOpen(false)}
-                  className="uppercase py-4  border-b border-black hover:border-orange-500  text-xl cursor-pointer"
+                  className="uppercase py-4  border-b border-[#040f28] hover:border-orange-500  text-xl cursor-pointer"
                 >
                   <Link href="/"> About</Link>
                 </li>
                 <li
                   onClick={() => setMenuOpen(false)}
-                  className="uppercase py-4 border-b border-black hover:border-orange-500  text-xl cursor-pointer"
+                  className="uppercase py-4 border-b border-[#040f28] hover:border-orange-500  text-xl cursor-pointer"
                 >
-                  <Link href="/"> Contact</Link>
+                  <Link href="/contact"> Contact</Link>
                 </li>
               </ul>
             </div>

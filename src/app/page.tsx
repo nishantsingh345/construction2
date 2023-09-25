@@ -18,7 +18,7 @@ export default function Home() {
       <Why />
       <Stat />
       <Testimonial />
-      <Marque />
+      {/* <Marque /> */}
       <Apply />
     </div>
   );

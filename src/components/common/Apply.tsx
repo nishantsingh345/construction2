@@ -14,7 +14,7 @@ const Apply = (props: Props) => {
             <p className="font-bold text-white text-xl"> Feel free to apply now </p>
             <BsStars size={25} />
           </div>
-          <div className="bg-[#ff5e14]  hover:bg-[#ff5e14]/90 text-white font-semibold  px-3 py-1 rounded-lg cursor-pointer ease-in-out duration-300">
+          <div className="bg-[#ff5e14]  hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-4 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
             Apply
           </div>
         </div>

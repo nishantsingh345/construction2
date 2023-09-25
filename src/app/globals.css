@@ -76,6 +76,17 @@
   overflow: hidden;
 }
 
+.stickyImgslat {
+  background-image: url("/slat/counterbg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 20% 100%;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
 /* @layer base {
   * {
     @apply border-border;

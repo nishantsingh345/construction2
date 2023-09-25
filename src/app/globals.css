@@ -66,6 +66,16 @@
   }
 }
 
+.stickyImg {
+  background-image: url("/whyus/whychooseusbg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
 /* @layer base {
   * {
     @apply border-border;

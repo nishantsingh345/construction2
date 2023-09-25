@@ -13,12 +13,12 @@ const TopNav = (props: Props) => {
           <div className="flex flex-col md:flex-row md:gap-6 gap-2 pt-3 pb-3 items-center">
             <div className="flex items-center gap-2 ">
               <FaPhone size={20} className="text-white" />
-              <p className="text-white text-[15px]">+00 325 4325 235</p>
+              <p className="text-white text-[15px]">+91 800 0016 122</p>
             </div>
 
             <div className="flex items-center gap-2">
               <MdEmail size={20} className="text-white" />
-              <p className="text-white">construction@gmail.com</p>
+              <p className="text-white">info@constructioncardshelpline.co.uk</p>
             </div>
           </div>
 

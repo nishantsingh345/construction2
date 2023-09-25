@@ -1,3 +1,4 @@
+import Apply from "@/components/common/Apply";
 import Marque from "@/components/common/Marque";
 import Navbar from "@/components/common/Navbar";
 import Book from "@/components/home/Book";
@@ -14,10 +15,11 @@ export default function Home() {
       <Hero />
       <Who />
       <Book />
-      <Stat />
       <Why />
+      <Stat />
       <Testimonial />
       <Marque />
+      <Apply />
     </div>
   );
 }

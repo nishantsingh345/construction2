@@ -8,12 +8,16 @@ const Who = (props: Props) => {
   return (
     <div className="py-16">
       <Section>
-        <div className="flex flex-col md:flex-row justify-between items-center gap-5">
-          <div className="w-full">
-            <img className="h-96" src="/hero/HB-1-3.webp" alt="" />
+        <div className="flex flex-col md:flex-row justify-between items-center md:gap-14 gap-5">
+          <div className="w-[50%]">
+            <img
+              className="w-[350px] h-[350px]"
+              src="https://www.constructionduty.com/images/CDL%20Design.webp"
+              alt=""
+            />
           </div>
-          <div className="flex flex-col space-y-4 w-full">
-            <p className="font-bold text-[#ff5e14] text-2xl">Who We Are?</p>
+          <div className="flex flex-col space-y-6 w-full">
+            <p className="font-bold text-[#ff5e14] text-2xl md:text-3xl">Who We Are?</p>
             <p>
               Construction Duty is just not a name but the word itself defines it means, a duty in
               the construction industry that imparts knowledge and guidance on Health and Safety,

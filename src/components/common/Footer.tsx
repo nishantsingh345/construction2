@@ -17,8 +17,8 @@ import Section from "./Section";
 const Quickinks = [
   {
     id: 1,
-    title: "Faq",
-    url: "/faq",
+    title: "Privacy Policy",
+    url: "/quicklinks/privacy-policy",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const Quickinks = [
   },
   {
     id: 3,
-    title: "Privacy Policy",
+    title: "Apply",
     url: "/quicklinks/privacy-policy",
   },
 ];
@@ -40,13 +40,13 @@ const Usefulllinks = [
   },
   {
     id: 2,
-    title: "Terms and Conditions",
-    url: "/quicklinks/teermsofuse",
+    title: "About",
+    url: "/about",
   },
   {
     id: 3,
-    title: "Privacy Policy",
-    url: "/quicklinks/privacy-policy",
+    title: "Contact",
+    url: "/contact",
   },
 ];
 function Footer() {

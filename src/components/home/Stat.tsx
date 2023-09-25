@@ -8,14 +8,14 @@ type Props = {};
 
 const Stat = (props: Props) => {
   return (
-    <div className="py-12">
+    <div className="py-8 bg-[#040f28]/70">
       <Section>
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-2">
           <div className="flex items-start gap-5 md:border-r border-[#040f28]">
             <FaTrophy size={60} className="text-[#ff5e14] pt-2" />
             <div className="flex flex-col justify-between">
               <p className="text-2xl font-bold text-[#ff5e14]">20 %</p>
-              <p className="text-[#040f28] text-xl">years of experience</p>
+              <p className="text-white text-xl">years of experience</p>
             </div>
           </div>
 
@@ -23,7 +23,7 @@ const Stat = (props: Props) => {
             <IoIosPeople size={80} className="text-[#ff5e14]" />
             <div className="flex flex-col justify-between">
               <p className="text-2xl font-bold text-[#ff5e14]">1,346</p>
-              <p className="text-[#040f28] text-xl">Satisfied customers</p>
+              <p className="text-white text-xl">Satisfied customers</p>
             </div>
           </div>
 
@@ -31,7 +31,7 @@ const Stat = (props: Props) => {
             <CgNotes size={60} className="text-[#ff5e14] pt-2" />
             <div className="flex flex-col justify-between">
               <p className="text-2xl font-bold text-[#ff5e14]">85</p>
-              <p className="text-[#040f28] text-xl">Complete projects</p>
+              <p className="text-white text-xl">Complete projects</p>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ const Stat = (props: Props) => {
             <FaTrophy size={60} className="text-[#ff5e14] pt-2" />
             <div className="flex flex-col justify-between">
               <p className="text-2xl font-bold text-[#ff5e14]">13</p>
-              <p className="text-[#040f28] text-xl">Award winning</p>
+              <p className="text-white text-xl">Award winning</p>
             </div>
           </div>
         </div>

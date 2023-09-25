@@ -8,22 +8,22 @@ const card = [
   {
     id: 1,
     text: "CITB TEST",
-    link: "/",
+    link: "/citb/book-now",
   },
   {
     id: 1,
-    text: "CITB TEST",
-    link: "/",
+    text: "COURSE",
+    link: "/course/book-now",
   },
   {
     id: 1,
-    text: "CITB TEST",
-    link: "/",
+    text: "CSCS CARDS",
+    link: "/cscscards/book-now",
   },
   {
     id: 1,
-    text: "CITB TEST",
-    link: "/",
+    text: "REVISION MATERIAL",
+    link: "/contact",
   },
 ];
 

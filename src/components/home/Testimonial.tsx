@@ -53,42 +53,62 @@ const Testimonial = (props: Props) => {
   return (
     <div className="py-10">
       <Section>
-        <div>
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          {/* <div>
             <p className="font-bold text-[#040f28] text-2xl text-center py-4'">Testimonial</p>
             <p className="font-bold text-[#ff5e14] text-2xl text-center py-4'">
               What our clients say
             </p>
+          </div> */}
+
+          <div className="bg-[url('/testimonialsbg1.jpg')]  w-full py-6">
+            <div className="flex items-center justify-center">
+              <div className="bg-[#ff5e14] p-5 flex-col items-center gap-2">
+                <img className="mx-auto" src="/titleicon.png" alt="" />
+                <p className="font-bold text-center text-2xl py-3 text-white">Our Testimonial</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center mt-3">
+              <div className="bg-transparent border-2 border-[#ff5e14] hover:bg-[#ff5e14] cursor-pointer px-10 rounded-md  md:py-3 py-2 text-lg text-[#040f28] hover:text-white ease-in duration-500 font-bold md:text-xl">
+                <p className="text-center">View All Clients</p>
+              </div>
+            </div>
           </div>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            spaceBetween={50}
-            slidesPerView={1}
-            //   navigation
-            pagination={{ clickable: true }}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-          >
-            {data.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className=" flex flex-col md:flex-row items-center gap-5 md:mx-10">
-                  <img className="w-1/4" src={item?.immg} alt={item?.title} />
-                  <div className="flex flex-col items-start  gap-4">
-                    <p className="font-bold text-xl">{item?.title}</p>
-                    <p className="">{item?.text}</p>
-                    <div className="flex items-center text-2xl text-yellow-500">
-                      <FaStar />
-                      <FaStar />
-                      <FaStar />
-                      <FaStar />
+
+          <div className="w-full bg-[url('/whyus/whychooseusbg.jpg')] py-6">
+            <div>
+              <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                spaceBetween={50}
+                slidesPerView={1}
+                //   navigation
+                pagination={{ clickable: true }}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+              >
+                {data.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <div className=" flex flex-col md:flex-row items-center gap-2 md:mx-10 py-10">
+                      {/* <img className="w-1/4" src={item?.immg} alt={item?.title} /> */}
+                      <div className="flex flex-col items-end  gap-4">
+                        <p className="">{item?.text}</p>
+                        <p className="font-bold text-xl capitalize">{item?.title}</p>
+
+                        <div className="flex items-center text-xl text-yellow-500">
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
         </div>
       </Section>
     </div>

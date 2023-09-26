@@ -33,7 +33,7 @@ const Cards = (props: Props) => {
           {card.map((item, index) => (
             <div
               key={index}
-              className="group bg-[#040f28]/70 hover:bg-[#ff5e14] ease-in-out duration-300 rounded-md p-5 mx-auto rounded-md"
+              className="group bg-[#040f28]/70 hover:bg-[#ff5e14] ease-in-out duration-300 rounded-md p-5 mx-auto"
             >
               <div className="flex items-center  justify-center ">
                 <div className=" text-white bg-[#040f28] px-6 py-3 rounded-3xl  group-hover:bg-[#ff5e14]">

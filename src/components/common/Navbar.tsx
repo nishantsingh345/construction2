@@ -21,7 +21,7 @@ const Navbar = (props: Props) => {
           {/* Desktop Menue */}
           <div className="flex items-center justify-between py-5">
             <Link href="/">
-              <img className="w-48" src="/logo1.jpeg" alt="" />
+              <img className="w-40 md:w-44" src="/logo2.png" alt="" />
             </Link>
 
             <div className="text-black md:flex hidden">

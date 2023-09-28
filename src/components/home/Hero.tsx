@@ -12,10 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-
 type Props = {};
-
-
 
 const Hero = (props: Props) => {
   return (
@@ -36,17 +33,17 @@ const Hero = (props: Props) => {
         // onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
-          <img className="w-full " src="/hero/HB-1-3.webp" alt="" />
+          <img className="w-full " src="/hero/banner1.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full " src="/hero/HB-1-3.webp" alt="" />
+          <img className="w-full " src="/hero/banner3 (2).jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-full " src="/hero/HB-1-3.webp" alt="" />
+          <img className="w-full " src="/hero/banner4.jpg" alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img className="w-full " src="/hero/HB-1-3.webp" alt="" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

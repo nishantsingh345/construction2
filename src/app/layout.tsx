@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/common/Footer";
+import TopNav from "@/components/common/TopNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <div className="flex min-h-screen flex-col justify-between">
           <div>
+            <TopNav />
             <div className="sticky top-0 z-50">
               <Navbar />
             </div>

@@ -19,9 +19,9 @@ const Navbar = (props: Props) => {
       <Section>
         <nav>
           {/* Desktop Menue */}
-          <div className="flex items-center justify-between py-5">
+          <div className="flex items-center justify-between py-2">
             <Link href="/">
-              <img className="w-40 md:w-44" src="/logo2.png" alt="" />
+              <img className="w-40 md:w-60" src="/logo2.png" alt="" />
             </Link>
 
             <div className="text-black md:flex hidden">

@@ -10,7 +10,7 @@ const card = [
     id: 1,
     icon: <FaAddressCard size={40} />,
     title: "Registered Address:",
-    text: "Lorem ipsum dolor sit amet",
+    text: "124, City Road London , EC1V 2NX",
   },
   {
     id: 1,

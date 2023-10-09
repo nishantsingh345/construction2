@@ -10,6 +10,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaMap,
+  FaAddressCard,
 } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import Section from "./Section";
@@ -105,11 +106,15 @@ function Footer() {
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-2">
                     <FaPhone />
-                    <p>123 456 7893</p>
+                    <p>+91 800 0016 122</p>
                   </div>
                   <p className="flex items-center gap-2">
                     <AiOutlineMail />
-                    info@construction.in
+                    info@constructioncardshelpline.co.uk
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <FaAddressCard />
+                    124, City Road London , EC1V 2NX
                   </p>
                 </div>
                 {/* <div className="text-justify gap-1 items-start flex">

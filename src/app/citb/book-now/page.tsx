@@ -1,4 +1,4 @@
-import Note from "@/components/book/citb.tsx/Note";
+import Note from "@/components/book/citb/Note";
 import PersnoalDetails from "@/components/common/PersnoalDetails";
 import React from "react";
 

@@ -70,7 +70,7 @@ const Testimonial = (props: Props) => {
               </div>
             </div>
             <div className="flex items-center justify-center mt-3">
-              <div className="bg-transparent border-2 border-[#ff5e14] hover:bg-[#ff5e14] cursor-pointer px-10 rounded-md  md:py-3 py-2 text-lg text-[#040f28] hover:text-white ease-in duration-500 font-bold md:text-xl">
+              <div className="bg-transparent border-2 border-[#ff5e14] hover:bg-[#ff5e14] cursor-pointer px-4 rounded-md  md:py-3 py-2 text-lg text-[#040f28] hover:text-white ease-in duration-500 font-bold md:text-xl">
                 <Link
                   href="https://www.trustpilot.com/review/constructioncardshelpline.co.uk"
                   target="_blank"

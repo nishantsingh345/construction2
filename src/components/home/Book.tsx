@@ -23,7 +23,7 @@ const card = [
   {
     id: 1,
     text: "REVISION MATERIAL",
-    link: "/contact",
+    link: "/revisnoal-material",
   },
 ];
 

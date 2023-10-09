@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Section from "../common/Section";
 import { FaStar } from "react-icons/fa";
+import Link from "next/link";
 
 type Props = {};
 
@@ -70,7 +71,13 @@ const Testimonial = (props: Props) => {
             </div>
             <div className="flex items-center justify-center mt-3">
               <div className="bg-transparent border-2 border-[#ff5e14] hover:bg-[#ff5e14] cursor-pointer px-10 rounded-md  md:py-3 py-2 text-lg text-[#040f28] hover:text-white ease-in duration-500 font-bold md:text-xl">
-                <p className="text-center">View All Clients</p>
+                <Link
+                  href="https://www.trustpilot.com/review/constructioncardshelpline.co.uk"
+                  target="_blank"
+                  className="text-center"
+                >
+                  View All Testimonial
+                </Link>
               </div>
             </div>
           </div>

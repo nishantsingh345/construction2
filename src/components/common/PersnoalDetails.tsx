@@ -81,7 +81,7 @@ const PersnoalDetails = ({ href }: Props) => {
                 />
 
                 <Input
-                  type={"Number"}
+                  type={"text"}
                   name={"postcpde"}
                   id="postcode"
                   register={register}

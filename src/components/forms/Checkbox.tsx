@@ -9,6 +9,7 @@ interface Props {
   children: any;
   errors: any;
   label: any;
+  value: any;
 }
 
 function Checkbox({
@@ -19,6 +20,7 @@ function Checkbox({
   errors,
   name,
   children,
+  value,
   label,
 }: Props): ReactElement {
   return (
@@ -27,9 +29,9 @@ function Checkbox({
         <input
           type={type}
           id={id}
-          defaultChecked={true}
+          defaultChecked={false}
           name={name}
-          className="text-[#0B8188] border-gray-600 rounded mt-1 focus:ring-[#0B8188]"
+          className="text-[#0B8188] border-gray-600 checkbox-md cursor-pointer  mt-1 focus:ring-[#0B8188] rounded-md"
           {...register(name, { required })}
         />
         <label htmlFor={id} className="block text-sm text-gray-900">

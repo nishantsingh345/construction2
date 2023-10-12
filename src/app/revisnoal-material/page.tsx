@@ -1,3 +1,4 @@
+import RevisinoalForm from "@/components/book/reisinoal/Revisinoal";
 import Hero from "@/components/common/Hero";
 import PersnoalDetails from "@/components/common/PersnoalDetails";
 import React from "react";
@@ -8,7 +9,7 @@ const page = (props: Props) => {
   return (
     <div>
       <Hero name="Revisional Material" />
-      <PersnoalDetails href="/" />
+      <RevisinoalForm />
     </div>
   );
 };

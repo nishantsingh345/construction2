@@ -231,7 +231,6 @@ const CitbForm = (props: Props) => {
                   register={register}
                   options={[
                     {
-                      name: "Astrology",
                       value: { name: "Astrology" },
                     },
                   ]}

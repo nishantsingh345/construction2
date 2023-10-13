@@ -212,7 +212,7 @@ const Revisinoal = (props: Props) => {
                             return (
                               <FormItem
                                 key={item.id}
-                                className="flex  md:items-center items-start  gap-2 space-y-4 justify-between"
+                                className="flex  items-start md:items-center  py-3 gap-2 justify-between"
                               >
                                 <FormLabel className="font-normal">{item.label}</FormLabel>
                                 <FormControl>

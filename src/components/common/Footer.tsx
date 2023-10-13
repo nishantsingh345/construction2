@@ -57,7 +57,7 @@ function Footer() {
         <div className="space-y-6 md:px-8">
           <div className="grid lg:grid-cols-4 space-x-6 space-y-6">
             <div className="w-fit space-y-4 text-justify">
-              <img src="/logo1.jpeg" alt="" />
+              <img className="w-56" src="/logo1.jpeg" alt="" />
               <div className="flex flex-col gap-4 ">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum culpa dicta

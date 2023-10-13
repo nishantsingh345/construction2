@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { toast } from "@/components/ui/use-toast";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -23,18 +23,24 @@ const items = [
   {
     id: "hS&Ebook",
     label: "HS&E Test for Operatives & Specialists Book",
+    price: 150,
   },
   {
     id: "hS&Edvd",
     label: "HS&E Test for Operatives & Specialists DVD",
+    price: 250,
   },
   {
     id: "safetybook",
-    label: "Health, safety and environment test for managers and professionals Book",
+    label:
+      "Health, safety and environment test for managers and professionals Book",
+    price: 350,
   },
   {
     id: "safetydvd",
-    label: "Health, safety and environment test for managers and professionals DVD",
+    label:
+      "Health, safety and environment test for managers and professionals DVD",
+    price: 450,
   },
 ] as const;
 
@@ -55,14 +61,27 @@ const FormSchema = z.object({
 type Props = {};
 
 const Revisinoal = (props: Props) => {
+  //TODO state with price
+  const [price, setPrice] = useState<any>([]);
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      items: [""],
+      firstName: "",
+      lastname: "",
+      items: [],
     },
   });
+  const { watch } = form;
+
+  const itemsWatch = watch("items");
+  // ! useeffectg
+  useEffect(() => {
+    const itemW = items?.filter((watch) => itemsWatch.includes(watch.id));
+    setPrice(itemW);
+  }, [itemsWatch]);
 
   const onSubmit = (values: z.infer<typeof FormSchema>) => {
+    values.items = price;
     console.log(values);
     toast({
       title: "You submitted the following values:",
@@ -79,7 +98,10 @@ const Revisinoal = (props: Props) => {
       <Section>
         <div className="border-slate-700 border-2 p-3 rounded-md">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-4">
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="w-full space-y-4"
+            >
               <div className="w-full space-y-4 border-2 border-slate-700 p-3 rounded-md">
                 <p className="font-bold space-y-2 text-2xl">Persnoal Details</p>
                 <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
@@ -118,7 +140,11 @@ const Revisinoal = (props: Props) => {
                       <FormItem className="w-full space-y-1">
                         <FormLabel>Birth Of Date*</FormLabel>
                         <FormControl>
-                          <Input placeholder="Birth of Date" type="date" {...field} />
+                          <Input
+                            placeholder="Birth of Date"
+                            type="date"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -131,7 +157,11 @@ const Revisinoal = (props: Props) => {
                       <FormItem className="w-full space-y-1">
                         <FormLabel>Mobile*</FormLabel>
                         <FormControl>
-                          <Input placeholder="Number" type="number" {...field} />
+                          <Input
+                            placeholder="Number"
+                            type="number"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -159,7 +189,11 @@ const Revisinoal = (props: Props) => {
                       <FormItem className="w-full space-y-1">
                         <FormLabel>Postcode*</FormLabel>
                         <FormControl>
-                          <Input placeholder="Postcode" type="text" {...field} />
+                          <Input
+                            placeholder="Postcode"
+                            type="text"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -187,7 +221,11 @@ const Revisinoal = (props: Props) => {
                       <FormItem className="w-full space-y-1">
                         <FormLabel>Insurence No.*</FormLabel>
                         <FormControl>
-                          <Input placeholder="Insurence Number" type="text" {...field} />
+                          <Input
+                            placeholder="Insurence Number"
+                            type="text"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -214,15 +252,22 @@ const Revisinoal = (props: Props) => {
                                 key={item.id}
                                 className="flex  md:items-center items-start  gap-2 space-y-4 justify-between"
                               >
-                                <FormLabel className="font-normal">{item.label}</FormLabel>
+                                <FormLabel className="font-normal">
+                                  {item.label}
+                                </FormLabel>
                                 <FormControl>
                                   <Checkbox
                                     checked={field.value?.includes(item.id)}
                                     onCheckedChange={(checked) => {
                                       return checked
-                                        ? field.onChange([...field.value, item.id])
+                                        ? field.onChange([
+                                            ...field.value,
+                                            item.id,
+                                          ])
                                         : field.onChange(
-                                            field.value?.filter((value) => value !== item.id)
+                                            field.value?.filter(
+                                              (value) => value !== item.id
+                                            )
                                           );
                                     }}
                                   />
@@ -238,7 +283,11 @@ const Revisinoal = (props: Props) => {
                 />
               </div>
               <div className="flex items-center justify-center">
-                <Button className="bg-[#ff5e14] hover:bg-[#ff5e14]/90" size="lg" type="submit">
+                <Button
+                  className="bg-[#ff5e14] hover:bg-[#ff5e14]/90"
+                  size="lg"
+                  type="submit"
+                >
                   PROCEED
                 </Button>
               </div>

@@ -28,8 +28,8 @@ const Quickinks = [
   },
   {
     id: 3,
-    title: "Apply",
-    url: "/quicklinks/privacy-policy",
+    title: "Refund Policy",
+    url: "/refund-policy",
   },
 ];
 

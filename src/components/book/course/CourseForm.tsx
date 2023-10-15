@@ -10,13 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 
 import { toast } from "@/components/ui/use-toast";
 import React, { useEffect, useState } from "react";
@@ -30,28 +24,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
-const items = [
-  {
-    id: "hS&Ebook",
-    label: "HS&E Test for Operatives & Specialists Book",
-    price: 150,
-  },
-  {
-    id: "hS&Edvd",
-    label: "HS&E Test for Operatives & Specialists DVD",
-    price: 250,
-  },
-  {
-    id: "safetybook",
-    label: "Health, safety and environment test for managers and professionals Book",
-    price: 350,
-  },
-  {
-    id: "safetydvd",
-    label: "Health, safety and environment test for managers and professionals DVD",
-    price: 450,
-  },
-] as const;
+
 
 const FormSchema = z.object({
   firstName: z.string().min(2).max(50),
@@ -63,24 +36,7 @@ const FormSchema = z.object({
   postcodetest: z.string().optional(),
   address: z.string().min(1).max(50),
   insurence: z.string().min(1).max(50),
-  selecttest: z.string({
-    required_error: "Please select an test to display.",
-  }),
-  selectlang: z
-    .string({
-      required_error: "Please select an Language to test.",
-    })
-    .optional(),
-  preferredtime: z.string({
-    required_error: "Please select Prefered Time for test.",
-  }),
-  testcenter: z.string({
-    required_error: "Please select Test Center for test.",
-  }),
   preferreddate: z.string().min(1).max(50),
-  items: z.array(z.string()).refine((value) => value.some((item) => item), {
-    message: "You have to select at least one item.",
-  }),
   type: z.enum(["all", "mentions", "none"], {
     required_error: "You need to select a notification type.",
   }),
@@ -96,20 +52,19 @@ const CourseForm = (props: Props) => {
     defaultValues: {
       firstName: "",
       lastname: "",
-      items: [],
+      number: "",
+      birthdate: "",
+      email: "",
+      insurence: "",
+      preferreddate: "",
+      type: "none",
+      address: "",
+      postcode: "",
     },
   });
   const { watch } = form;
 
-  const itemsWatch = watch("items");
-  // ! useeffectg
-  useEffect(() => {
-    const itemW = items?.filter((watch) => itemsWatch.includes(watch.id));
-    setPrice(itemW);
-  }, [itemsWatch]);
-
   const onSubmit = (values: z.infer<typeof FormSchema>) => {
-    values.items = price;
     console.log(values);
     toast({
       title: "You submitted the following values:",

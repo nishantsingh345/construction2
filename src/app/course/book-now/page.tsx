@@ -1,6 +1,6 @@
 import CourseForm from "@/components/book/course/CourseForm";
 import Note from "@/components/book/course/Note";
-import PersnoalDetails from "@/components/common/PersnoalDetails";
+// import PersnoalDetails from "@/components/common/PersnoalDetails";
 import React from "react";
 
 type Props = {};

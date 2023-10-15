@@ -28,6 +28,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+
 const items = [
   {
     id: "hS&Ebook",
@@ -78,6 +80,9 @@ const FormSchema = z.object({
   preferreddate: z.string().min(1).max(50),
   items: z.array(z.string()).refine((value) => value.some((item) => item), {
     message: "You have to select at least one item.",
+  }),
+  type: z.enum(["all", "mentions", "none"], {
+    required_error: "You need to select a notification type.",
   }),
 });
 
@@ -240,6 +245,56 @@ const CourseForm = (props: Props) => {
 
               <div className="w-full space-y-4 border-2 border-slate-700 p-3 rounded-md">
                 <p className="font-bold space-y-2 text-2xl">Course Details</p>
+
+                <FormField
+                  control={form.control}
+                  name="type"
+                  render={({ field }) => (
+                    <FormItem className="space-y-3">
+                      <FormLabel className="">How would you like to take the course</FormLabel>
+                      <FormControl className="">
+                        <RadioGroup
+                          onValueChange={field.onChange}
+                          defaultValue={field.value}
+                          className="flex space-x-2 items-center"
+                        >
+                          <FormItem className="flex items-center space-x-3 space-y-0">
+                            <FormControl>
+                              <RadioGroupItem value="all" />
+                            </FormControl>
+                            <FormLabel className="font-normal">Online</FormLabel>
+                          </FormItem>
+                          <FormItem className="flex items-center space-x-3 space-y-0">
+                            <FormControl>
+                              <RadioGroupItem value="mentions" />
+                            </FormControl>
+                            <FormLabel className="font-normal">At a Course Centre</FormLabel>
+                          </FormItem>
+                        </RadioGroup>
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <div className="space-y-2">
+                  <p className="font-bold text-lg">Course Type</p>
+                  <p>Level 1 Award Health, Safety and Awareness Course</p>
+                </div>
+
+                <FormField
+                  control={form.control}
+                  name="preferreddate"
+                  render={({ field }) => (
+                    <FormItem className="w-full space-y-1">
+                      <FormLabel>Preferred Date*</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Preferred Date*" type="date" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
               </div>
 
               <div className="flex items-center justify-center">

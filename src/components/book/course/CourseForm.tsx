@@ -10,8 +10,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 
-
-
 import { toast } from "@/components/ui/use-toast";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -24,8 +22,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
-
-
 const FormSchema = z.object({
   firstName: z.string().min(2).max(50),
   lastname: z.string().min(2).max(50),
@@ -37,7 +33,7 @@ const FormSchema = z.object({
   address: z.string().min(1).max(50),
   insurence: z.string().min(1).max(50),
   preferreddate: z.string().min(1).max(50),
-  type: z.enum(["all", "mentions", "none"], {
+  type: z.enum(["online-courese", "course-center", "none"], {
     required_error: "You need to select a notification type.",
   }),
 });
@@ -215,13 +211,13 @@ const CourseForm = (props: Props) => {
                         >
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl>
-                              <RadioGroupItem value="all" />
+                              <RadioGroupItem value="online-courese" />
                             </FormControl>
                             <FormLabel className="font-normal">Online</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl>
-                              <RadioGroupItem value="mentions" />
+                              <RadioGroupItem value="course-center" />
                             </FormControl>
                             <FormLabel className="font-normal">At a Course Centre</FormLabel>
                           </FormItem>

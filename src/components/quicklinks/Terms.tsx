@@ -21,22 +21,23 @@ const Terms = (props: Props) => {
           <div>
             <p>
               These Terms of Service govern your use of the website located at
-              http://www.constructioncardhelpline.com/ which is owned and operated by Construction Cards Helpline
-              Limited (13098213) registered in England and Wales which provides services related to
-              construction activities like getting CSCS card and booking Health and safety
-              environment test within construction sector or any related services provided by
-              Construction Cards Helpline.
+              http://www.constructioncardhelpline.com/ which is owned and operated by Construction
+              Cards Helpline Limited (13098213) registered in England and Wales which provides
+              services related to construction activities like getting CSCS card and booking Health
+              and safety environment test within construction sector or any related services
+              provided by Construction Cards Helpline.
             </p>
           </div>
           <div>
             <p>
-              By accessing http://www.constructioncardhelpline.com/ , you agree to abide by these Terms of
-              Service and to comply with all applicable laws and regulations. If you do not agree
-              with these Terms of Service, you are prohibited from using or accessing this website
-              or using any other services provided by Construction Cards Helpline. We, Construction Cards Helpline,
-              reserve the right to review and amend any of these Terms of Service at our sole
-              discretion. Upon doing so, we will update this page. Any changes to these Terms of
-              Service will take effect immediately from the date of publication.
+              By accessing http://www.constructioncardhelpline.com/ , you agree to abide by these
+              Terms of Service and to comply with all applicable laws and regulations. If you do not
+              agree with these Terms of Service, you are prohibited from using or accessing this
+              website or using any other services provided by Construction Cards Helpline. We,
+              Construction Cards Helpline, reserve the right to review and amend any of these Terms
+              of Service at our sole discretion. Upon doing so, we will update this page. Any
+              changes to these Terms of Service will take effect immediately from the date of
+              publication.
             </p>
           </div>
 
@@ -63,8 +64,8 @@ const Terms = (props: Props) => {
               to have accepted, the changes in any revised Terms of Use by your continued use of the
               Site after the date such revised Terms of Use are posted. If still you unable to
               access these Terms and condition on the internet or digitally then on your request you
-              just drop us an email at info@constructioncardshelpline.co.uk The information provided on the
-              Site is not intended for distribution to or use by any person or entity in any
+              just drop us an email at info@constructioncardshelpline.co.uk The information provided
+              on the Site is not intended for distribution to or use by any person or entity in any
               jurisdiction or country where such distribution or use would be contrary to law or
               regulation or which would subject us to any registration requirement within such
               jurisdiction or country. Accordingly, those persons who choose to access the Site from
@@ -189,8 +190,8 @@ const Terms = (props: Props) => {
               </div>
               <p>
                 Knowingly or negligently use this website or any of its associated services in a way
-                that abuses or disrupts our networks or any other service Construction Cards Helpline
-                provides;
+                that abuses or disrupts our networks or any other service Construction Cards
+                Helpline provides;
               </p>
             </div>
             <div className="flex  items-start  gap-2">
@@ -230,12 +231,12 @@ const Terms = (props: Props) => {
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
               The intellectual property in the materials contained in this website are owned by or
-              licensed to Construction Cards Helpline and are protected by applicable copyright and trademark
-              law. We grant our users permission to download one copy of the materials for personal,
-              non-commercial transitory use. This constitutes the grant of a license, not a transfer
-              of title. This license shall automatically terminate if you violate any of these
-              restrictions or the Terms of Service, and may be terminated by Construction Cards Helpline at
-              any time.
+              licensed to Construction Cards Helpline and are protected by applicable copyright and
+              trademark law. We grant our users permission to download one copy of the materials for
+              personal, non-commercial transitory use. This constitutes the grant of a license, not
+              a transfer of title. This license shall automatically terminate if you violate any of
+              these restrictions or the Terms of Service, and may be terminated by Construction
+              Cards Helpline at any time.
             </p>
           </div>
 
@@ -280,11 +281,11 @@ const Terms = (props: Props) => {
             <p className="font-bold text-xl   ">Links</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
-              Construction Cards Helpline has not reviewed all of the sites linked to its website and is not
-              responsible for the contents of any such linked site. The inclusion of any link does
-              not imply endorsement, approval, or control by the Construction Cards Helpline of the site. Use
-              of any such linked site is at your own risk and we ply advise you to make your
-              investigations concerning the suitability of those sites.
+              Construction Cards Helpline has not reviewed all of the sites linked to its website
+              and is not responsible for the contents of any such linked site. The inclusion of any
+              link does not imply endorsement, approval, or control by the Construction Cards
+              Helpline of the site. Use of any such linked site is at your own risk and we ply
+              advise you to make your investigations concerning the suitability of those sites.
             </p>
           </div>
 
@@ -324,12 +325,12 @@ const Terms = (props: Props) => {
               For any query or concerns regarding your privacy, you may contact us using the
               following details:
             </p>
-            <div className="flex items-center gap-2">
-              <FaPhone />
+            <div className="flex items-center gap-2 text-[#ff5e14]">
+              <FaPhone ize={30} />
               <p>+91 800 0016 122</p>
             </div>
-            <p className="flex items-center gap-2">
-              <AiOutlineMail />
+            <p className="flex items-center gap-2 text-[#ff5e14]">
+              <AiOutlineMail size={30} />
               info@constructioncardshelpline.co.uk
             </p>
           </div>

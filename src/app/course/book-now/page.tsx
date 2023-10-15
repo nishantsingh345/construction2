@@ -1,3 +1,4 @@
+import CourseForm from "@/components/book/course/CourseForm";
 import Note from "@/components/book/course/Note";
 import PersnoalDetails from "@/components/common/PersnoalDetails";
 import React from "react";
@@ -8,7 +9,8 @@ const page = (props: Props) => {
   return (
     <div>
       <Note />
-      <PersnoalDetails href="" />
+      <CourseForm />
+      {/* <PersnoalDetails href="" /> */}
     </div>
   );
 };

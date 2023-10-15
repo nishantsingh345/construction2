@@ -24,7 +24,7 @@ const Quickinks = [
   {
     id: 2,
     title: "Terms and Conditions",
-    url: "/quicklinks/teermsofuse",
+    url: "terms-&-condition",
   },
   {
     id: 3,

@@ -1,6 +1,8 @@
 import React from "react";
 import Section from "../common/Section";
 import { GoDotFill } from "react-icons/go";
+import { FaPhone } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 type Props = {};
 
@@ -11,7 +13,7 @@ const Terms = (props: Props) => {
         <div className="flex flex-col text-justify gap-4 text-slate-900">
           <div className="flex flex-col gap-2">
             <p className="font-bold text-xl   ">
-              Construction Duty is the trading name of Construction Duty limited
+              Construction Cards Helpline is the trading name of Construction Cards Helpline limited
             </p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
           </div>
@@ -19,19 +21,19 @@ const Terms = (props: Props) => {
           <div>
             <p>
               These Terms of Service govern your use of the website located at
-              http://www.constructionduty.com/ which is owned and operated by Construction Duty
+              http://www.constructioncardhelpline.com/ which is owned and operated by Construction Cards Helpline
               Limited (13098213) registered in England and Wales which provides services related to
               construction activities like getting CSCS card and booking Health and safety
               environment test within construction sector or any related services provided by
-              Construction Duty.
+              Construction Cards Helpline.
             </p>
           </div>
           <div>
             <p>
-              By accessing http://www.constructionduty.com/ , you agree to abide by these Terms of
+              By accessing http://www.constructioncardhelpline.com/ , you agree to abide by these Terms of
               Service and to comply with all applicable laws and regulations. If you do not agree
               with these Terms of Service, you are prohibited from using or accessing this website
-              or using any other services provided by Construction Duty. We, Construction Duty,
+              or using any other services provided by Construction Cards Helpline. We, Construction Cards Helpline,
               reserve the right to review and amend any of these Terms of Service at our sole
               discretion. Upon doing so, we will update this page. Any changes to these Terms of
               Service will take effect immediately from the date of publication.
@@ -41,8 +43,8 @@ const Terms = (props: Props) => {
           <div className="flex flex-col gap-2">
             <p className="font-bold text-xl   ">Interpretation</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
-            <p>{`   The terms for the website which is? www.constructionduty.com “we”, “us” or “our” when
-            used in these terms are meant Construction Duty Limited. The terms are defined as "You"
+            <p>{`   The terms for the website which is? www.constructioncardhelpline.com “we”, “us” or “our” when
+            used in these terms are meant Construction Cards Helpline Limited. The terms are defined as "You"
             "Your" or "Yours" is simply meant the terms and conditions are for a user or a user who
             visits our website and opt for the services or who is looking to buy or bought a product
             for our website or over the phone. The term "consumer" means that the product is
@@ -54,14 +56,14 @@ const Terms = (props: Props) => {
           <div className="flex flex-col gap-2">
             <p className="font-bold text-xl   ">Agreement</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
-            <p>{`   These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Construction Duty ("Company", “we”, “us”, or “our”), concerning your access to and use of the www.constructionduty.com website as well as any other social media forms, marketing channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”). You agree that by accessing the Site, you have purchased or book a product form the website as a user means that you have read, understood, and agreed to be bound by all of these Terms of Use. If you do not agree with all of these terms of use, then you are expressly prohibited from using the site and you must discontinue use immediately. We strictly don’t sell a product to the user who is falling under the age of 16. We at Construction Duty reserve the right, in our sole discretion, to make changes or modifications to these Terms of Use at any time and for any reason. We will alert you about any changes by updating the "Last Updated" date of these Terms of Use, and you waive any right to receive specific notice of each such change.`}</p>
+            <p>{`   These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Construction Cards Helpline ("Company", “we”, “us”, or “our”), concerning your access to and use of the www.constructioncardhelpline.com website as well as any other social media forms, marketing channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”). You agree that by accessing the Site, you have purchased or book a product form the website as a user means that you have read, understood, and agreed to be bound by all of these Terms of Use. If you do not agree with all of these terms of use, then you are expressly prohibited from using the site and you must discontinue use immediately. We strictly don’t sell a product to the user who is falling under the age of 16. We at Construction Cards Helpline reserve the right, in our sole discretion, to make changes or modifications to these Terms of Use at any time and for any reason. We will alert you about any changes by updating the "Last Updated" date of these Terms of Use, and you waive any right to receive specific notice of each such change.`}</p>
             <p>
               It is your responsibility to periodically review these Terms of Use to stay informed
               of updates. You will be subject to and will be deemed to have been made aware of and
               to have accepted, the changes in any revised Terms of Use by your continued use of the
               Site after the date such revised Terms of Use are posted. If still you unable to
               access these Terms and condition on the internet or digitally then on your request you
-              just drop us an email at info@constructionduty.com The information provided on the
+              just drop us an email at info@constructioncardshelpline.co.uk The information provided on the
               Site is not intended for distribution to or use by any person or entity in any
               jurisdiction or country where such distribution or use would be contrary to law or
               regulation or which would subject us to any registration requirement within such
@@ -75,7 +77,7 @@ const Terms = (props: Props) => {
           <div className="flex flex-col gap-2">
             <p className="font-bold text-xl   ">Services</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
-            <p>{`   The terms implemented on the services with quick to purchase a product from the website or via phone call will be subject to accept these terms by agreeing to the terms and condition applied on an email or live chat with the user and allowing the Construction Duty team to reach you for further for any query or sending any promotional offers related to your product you are looking for or product on-site like course, card, health safety and environment test etc. All the purchase related to the product is commenced by a phone, email or online are subject to the following both general and specific conditions.`}</p>
+            <p>{`   The terms implemented on the services with quick to purchase a product from the website or via phone call will be subject to accept these terms by agreeing to the terms and condition applied on an email or live chat with the user and allowing the Construction Cards Helpline team to reach you for further for any query or sending any promotional offers related to your product you are looking for or product on-site like course, card, health safety and environment test etc. All the purchase related to the product is commenced by a phone, email or online are subject to the following both general and specific conditions.`}</p>
           </div>
 
           <div className="flex flex-col gap-2">
@@ -187,7 +189,7 @@ const Terms = (props: Props) => {
               </div>
               <p>
                 Knowingly or negligently use this website or any of its associated services in a way
-                that abuses or disrupts our networks or any other service Construction Duty
+                that abuses or disrupts our networks or any other service Construction Cards Helpline
                 provides;
               </p>
             </div>
@@ -223,21 +225,114 @@ const Terms = (props: Props) => {
             </div>
           </div>
 
-          
-
           <div className="flex flex-col gap-2">
-            <p className="font-bold text-xl   ">Revision Material :</p>
+            <p className="font-bold text-xl   ">Intellectual property</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
-              This is an online material, all our mock papers are online. If material is supplied it
-              cannot be refunded or returned.
+              The intellectual property in the materials contained in this website are owned by or
+              licensed to Construction Cards Helpline and are protected by applicable copyright and trademark
+              law. We grant our users permission to download one copy of the materials for personal,
+              non-commercial transitory use. This constitutes the grant of a license, not a transfer
+              of title. This license shall automatically terminate if you violate any of these
+              restrictions or the Terms of Service, and may be terminated by Construction Cards Helpline at
+              any time.
             </p>
           </div>
 
-          <p className="py-2">
-            For more details or query you can reach us we are available from Mon to Fri between 8:00
-            AM – 7:00 PM and Saturday 9:00 AM to 6:00 PM you can reach us at +91 800 0016 122
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Liability</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              {`  Our website and the materials on our website are provided on an 'as-is basis. To the
+              extent permitted by law, Construction Cards Helpline makes no warranties, expressed or implied,
+              and hereby disclaims and negates all other warranties including, without limitation,
+              implied warranties or conditions of merchantability, fitness for a particular purpose,
+              or non-infringement of intellectual property, or other violation of rights. In no
+              event shall Construction Cards Helpline or its suppliers be liable for any consequential loss
+              suffered or incurred by you or any third party arising from the use or inability to
+              use this website or the materials on this website, even if Construction Cards Helpline or an
+              authorized representative has been notified, orally or in writing, of the possibility
+              of such damage.`}
+            </p>
+            <p>
+              {`In the context of this agreement, "consequential loss" includes any consequential loss, indirect loss, real or anticipated loss of profit, loss of benefit, loss of revenue, loss of business, loss of goodwill, loss of opportunity, loss of savings, loss of reputation, loss of use and/or loss or corruption of data, whether under the statute, contract, equity, tort (including negligence), indemnity, or otherwise.`}
+            </p>
+            <p>
+              Because some jurisdictions do not allow limitations on implied warranties, or
+              limitations of liability for consequential or incidental damages, these limitations
+              may not apply to you.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Accuracy of materials</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              The materials appearing on our website are not comprehensive and are for general
+              information purposes only. Construction Cards Helpline does not warrant or make any
+              representations concerning the accuracy, likely results, or reliability of the use of
+              the materials on this website, or otherwise relating to such materials or on any
+              resources linked to this website.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Links</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              Construction Cards Helpline has not reviewed all of the sites linked to its website and is not
+              responsible for the contents of any such linked site. The inclusion of any link does
+              not imply endorsement, approval, or control by the Construction Cards Helpline of the site. Use
+              of any such linked site is at your own risk and we ply advise you to make your
+              investigations concerning the suitability of those sites.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Right to terminate</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              We may suspend or terminate your right to use our website and terminate these Terms of
+              Service immediately upon written notice to you for any breach of these Terms of
+              Service.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Severance</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              Any term of these Terms of Service which is wholly or partially void or unenforceable
+              is severed to the extent that it is void or unenforceable. The validity of the
+              remainder of these Terms of Service is not affected.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Governing law</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              These Terms of Service are governed by and construed under the laws of the United
+              Kingdom. You irrevocably submit to the exclusive jurisdiction of the courts in that
+              State or location.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Contact Us</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              For any query or concerns regarding your privacy, you may contact us using the
+              following details:
+            </p>
+            <div className="flex items-center gap-2">
+              <FaPhone />
+              <p>+91 800 0016 122</p>
+            </div>
+            <p className="flex items-center gap-2">
+              <AiOutlineMail />
+              info@constructioncardshelpline.co.uk
+            </p>
+          </div>
         </div>
       </Section>
     </div>

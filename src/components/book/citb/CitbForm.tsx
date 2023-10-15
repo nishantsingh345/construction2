@@ -348,7 +348,7 @@ const CitbForm = (props: Props) => {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="09:00 To 10:00 AM">09:00 To 10:00 AM</SelectItem>
-                            <SelectItem value="09:00 To 10:00 AM">09:00 To 10:00 AM</SelectItem>
+                            <SelectItem value="09:00 To 10:00 AM">11:00 To 12:00 AM</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />

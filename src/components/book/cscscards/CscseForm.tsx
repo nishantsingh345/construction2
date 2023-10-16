@@ -40,6 +40,7 @@ const FormSchema = z.object({
   postcodetest: z.string().optional(),
   address: z.string().min(1).max(50),
   insurence: z.string().min(1).max(50),
+  citbtesting: z.string().optional(),
   type: z.enum(["new-card", "renewcard", "lost/stolen", "none"], {
     required_error: "You need to select a notification type.",
   }),
@@ -56,24 +57,52 @@ const select = [
     text: "CSCS Gold 1",
   },
   {
-    img: "/cscs-card/Advanced_Craft.jpg",
+    img: "/cscs-card/Apprentice.jpg",
     text: "CSCS Gold 6",
   },
   {
-    img: "/cscs-card/Advanced_Craft.jpg",
+    img: "/cscs-card/AQP.jpg",
     text: "CSCS Gold 5",
   },
   {
-    img: "/cscs-card/Advanced_Craft.jpg",
+    img: "/cscs-card/Ex_tech_super_manager.jpg",
     text: "CSCS Gold 3",
   },
   {
-    img: "/cscs-card/Advanced_Craft.jpg",
+    img: "/cscs-card/Exp_workertemp.jpg",
     text: "CSCS Gold 4",
   },
   {
-    img: "/cscs-card/Advanced_Craft.jpg",
+    img: "/cscs-card/IND_placement.jpg",
     text: "CSCS Gold 2 ",
+  },
+  {
+    img: "/cscs-card/Labourer_hi.jpg",
+    text: "CSCS Gold 11 ",
+  },
+  {
+    img: "/cscs-card/Manager.jpg",
+    text: "CSCS Gold 12",
+  },
+  {
+    img: "/cscs-card/PQP.jpg",
+    text: "CSCS Gold 13 ",
+  },
+  {
+    img: "/cscs-card/Provisionaltemp.jpg",
+    text: "CSCS Gold 14  ",
+  },
+  {
+    img: "/cscs-card/Skilled_Worker.jpg",
+    text: "CSCS Gold 18",
+  },
+  {
+    img: "/cscs-card/Supervisory.jpg",
+    text: "CSCS Gold 19 ",
+  },
+  {
+    img: "/cscs-card/Trainee_lo.jpg",
+    text: "CSCS Gold 20 ",
   },
 ];
 
@@ -93,6 +122,7 @@ const CscseForm = (props: Props) => {
       address: "",
       postcode: "",
       selectcard: "",
+      citbtesting: "",
     },
   });
   const { watch } = form;
@@ -244,7 +274,7 @@ const CscseForm = (props: Props) => {
                         <RadioGroup
                           onValueChange={field.onChange}
                           defaultValue={field.value}
-                          className="flex space-x-2 items-center"
+                          className="flex space-x-2 flex-wrap items-center"
                         >
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl>
@@ -283,17 +313,39 @@ const CscseForm = (props: Props) => {
                             <SelectValue placeholder="Green , Blue , Black etc" />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent>
+                        <SelectContent className="h-[400px] overflow-y-scroll">
                           {select.map((item, index) => (
                             <SelectItem key={index} value={item?.text}>
                               <div className="flex items-center gap-4">
-                                <img  className="w-16 h-10" src={item?.img} alt="" />
+                                <img className="w-16 h-10" src={item?.img} alt="" />
                                 <span>{item?.text}</span>
                               </div>
                             </SelectItem>
                           ))}
                         </SelectContent>
                       </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+
+              <div className="w-full space-y-4 border-2 border-slate-700 p-3 rounded-md">
+                <p className="font-bold space-y-2 text-2xl">Additional Information</p>
+
+                <FormField
+                  control={form.control}
+                  name="citbtesting"
+                  render={({ field }) => (
+                    <FormItem className="w-full space-y-1">
+                      <FormLabel>CITB Testing ID (If Available)</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="CITB Testing ID (If Available)"
+                          type="text"
+                          {...field}
+                        />
+                      </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}

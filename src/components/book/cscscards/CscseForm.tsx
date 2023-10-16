@@ -41,7 +41,7 @@ const FormSchema = z.object({
   address: z.string().min(1).max(50),
   insurence: z.string().min(1).max(50),
   citbtesting: z.string().optional(),
-  type: z.enum(["new-card", "renewcard", "lost/stolen", "none"], {
+  type: z.enum(["new-card", "renewcard", "replacecard", "none"], {
     required_error: "You need to select a notification type.",
   }),
   selectcard: z.string({
@@ -54,55 +54,55 @@ type Props = {};
 const select = [
   {
     img: "/cscs-card/Advanced_Craft.jpg",
-    text: "CSCS Gold 1",
+    text: "CSCS Gold Skilled Worker Card",
   },
   {
     img: "/cscs-card/Apprentice.jpg",
-    text: "CSCS Gold 6",
+    text: "CSCS Red Apprentice Card",
   },
   {
     img: "/cscs-card/AQP.jpg",
-    text: "CSCS Gold 5",
+    text: "CSCS White Academically Qualified Person",
   },
   {
     img: "/cscs-card/Ex_tech_super_manager.jpg",
-    text: "CSCS Gold 3",
+    text: "CSCS Experienced Technical, Supervisor or Manager",
   },
   {
     img: "/cscs-card/Exp_workertemp.jpg",
-    text: "CSCS Gold 4",
+    text: "CSCS Experienced Worker Card",
   },
   {
     img: "/cscs-card/IND_placement.jpg",
-    text: "CSCS Gold 2 ",
+    text: "CSCS Industry Placement Card ",
   },
   {
     img: "/cscs-card/Labourer_hi.jpg",
-    text: "CSCS Gold 11 ",
+    text: "CSCS Green Labourer Card",
   },
   {
     img: "/cscs-card/Manager.jpg",
-    text: "CSCS Gold 12",
+    text: "CSCS Gray Manager Card",
   },
   {
     img: "/cscs-card/PQP.jpg",
-    text: "CSCS Gold 13 ",
+    text: "CSCS Professionally Qualified Person",
   },
   {
     img: "/cscs-card/Provisionaltemp.jpg",
-    text: "CSCS Gold 14  ",
+    text: "CSCS Pink Provisional (temporary only) ",
   },
   {
     img: "/cscs-card/Skilled_Worker.jpg",
-    text: "CSCS Gold 18",
+    text: "CSCS Blue Skilled Worker Card",
   },
   {
     img: "/cscs-card/Supervisory.jpg",
-    text: "CSCS Gold 19 ",
+    text: "CSCS Gold Supervisory Card",
   },
   {
     img: "/cscs-card/Trainee_lo.jpg",
-    text: "CSCS Gold 20 ",
+    text: "CSCS Red Trainee Card ",
   },
 ];
 
@@ -290,9 +290,9 @@ const CscseForm = (props: Props) => {
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl>
-                              <RadioGroupItem value="lost/stolen" />
+                              <RadioGroupItem value="replacecard" />
                             </FormControl>
-                            <FormLabel className="font-normal">Lost/Stolen</FormLabel>
+                            <FormLabel className="font-normal">Replace Card</FormLabel>
                           </FormItem>
                         </RadioGroup>
                       </FormControl>

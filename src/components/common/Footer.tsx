@@ -19,7 +19,7 @@ const Quickinks = [
   {
     id: 1,
     title: "Privacy Policy",
-    url: "/quicklinks/privacy-policy",
+    url: "privacy-policy",
   },
   {
     id: 2,

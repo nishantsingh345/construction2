@@ -40,7 +40,6 @@ const FormSchema = z.object({
   postcodetest: z.string().optional(),
   address: z.string().min(1).max(50),
   insurence: z.string().min(1).max(50),
-  preferreddate: z.string().min(1).max(50),
   type: z.enum(["new-card", "renewcard", "lost/stolen", "none"], {
     required_error: "You need to select a notification type.",
   }),
@@ -50,6 +49,33 @@ const FormSchema = z.object({
 });
 
 type Props = {};
+
+const select = [
+  {
+    img: "/cscs-card/Advanced_Craft.jpg",
+    text: "CSCS Gold 1",
+  },
+  {
+    img: "/cscs-card/Advanced_Craft.jpg",
+    text: "CSCS Gold 6",
+  },
+  {
+    img: "/cscs-card/Advanced_Craft.jpg",
+    text: "CSCS Gold 5",
+  },
+  {
+    img: "/cscs-card/Advanced_Craft.jpg",
+    text: "CSCS Gold 3",
+  },
+  {
+    img: "/cscs-card/Advanced_Craft.jpg",
+    text: "CSCS Gold 4",
+  },
+  {
+    img: "/cscs-card/Advanced_Craft.jpg",
+    text: "CSCS Gold 2 ",
+  },
+];
 
 const CscseForm = (props: Props) => {
   //TODO state with price
@@ -63,7 +89,6 @@ const CscseForm = (props: Props) => {
       birthdate: "",
       email: "",
       insurence: "",
-      preferreddate: "",
       type: "none",
       address: "",
       postcode: "",
@@ -259,12 +284,14 @@ const CscseForm = (props: Props) => {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="09:00 To 10:00 AM">
-                            <div className="flex items-center gap-4">
-                              <img className="w-16 h-10" src="/logo2.png" alt="" />
-                              <span>cscs green card</span>
-                            </div>
-                          </SelectItem>
+                          {select.map((item, index) => (
+                            <SelectItem key={index} value={item?.text}>
+                              <div className="flex items-center gap-4">
+                                <img  className="w-16 h-10" src={item?.img} alt="" />
+                                <span>{item?.text}</span>
+                              </div>
+                            </SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                       <FormMessage />

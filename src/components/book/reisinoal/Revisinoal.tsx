@@ -68,6 +68,12 @@ const Revisinoal = (props: Props) => {
     defaultValues: {
       firstName: "",
       lastname: "",
+      birthdate: "",
+      number: "",
+      email: "",
+      postcode: "",
+      address: "",
+      insurence: "",
       items: [],
     },
   });

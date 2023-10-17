@@ -15,9 +15,9 @@ const Privacy = (props: Props) => {
             <p className="font-bold text-xl   ">Privacy Policy</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
-              {`  This is the privacy Policy of [www.constructionduty.com or Construction Duty Limited],
+              {`  This is the privacy Policy of [www.constructioncardshelpline.com or Construction Cards Helpline Limited],
               Company Number [13098213] . Information hereby given is accurate and true. This
-              website ("www.constructionduty.com") is operated by Construction Duty Limited.`}
+              website ("www.constructioncardshelpline.com") is operated by Construction Cards Helpline Limited.`}
             </p>
             <p>(‘We’, ‘Our’ , or ‘Us’ ).</p>
             <p>Our registered office is at [1 Pampisford Road, Purley ,England CR8 2NG].</p>
@@ -26,13 +26,13 @@ const Privacy = (props: Props) => {
           <div className="flex flex-col gap-2">
             <p className="font-bold text-xl   ">Your privacy is important to us</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
-            <p>{`It is Construction Duty 's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, http://www.constructionduty.com/ , and other sites we own and operate.`}</p>
+            <p>{`It is Construction Cards Helpline 's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, http://www.constructioncardshelpline.com/ , and other sites we own and operate.`}</p>
           </div>
 
           <div className="flex flex-col gap-2">
             <p className="font-bold text-xl   ">Consent</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
-            <p>{`   By using our website (constructionduty.com), you hereby consent to our Privacy Policy and agree to its terms.`}</p>
+            <p>{`   By using our website (constructioncardshelpline.com), you hereby consent to our Privacy Policy and agree to its terms.`}</p>
           </div>
 
           <div className="flex flex-col gap-2">
@@ -249,7 +249,7 @@ const Privacy = (props: Props) => {
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
               This includes our automation process of the websites and tool we use for us to collect
-              information from our website (constructionduty.com) with latest technologies like as
+              information from our website (constructioncardshelpline.com) with latest technologies like as
               follows:
             </p>
 
@@ -329,7 +329,7 @@ const Privacy = (props: Props) => {
             <p className="font-bold text-xl   ">Collection and use of information</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
-              We at (constructionduty.com) may collect personal information from you when you do any
+              We at (constructioncardshelpline.com) may collect personal information from you when you do any
               of the following on our website:
             </p>
             <div className="flex  items-start  gap-2">
@@ -458,7 +458,7 @@ const Privacy = (props: Props) => {
             <p className="font-bold text-xl   ">International transfers of personal information</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
-              If you placed an order with constructionduty.com either by phone or online then we
+              If you placed an order with constructioncardshelpline.com either by phone or online then we
               have an automated invoice generator and order confirmations receipt with all the
               details provided by you in your email, we will intimate with you all the latest
               actions or modification made on your product or services with every update on email or
@@ -604,10 +604,10 @@ const Privacy = (props: Props) => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <p className="font-bold text-xl   ">Construction Duty (Communication)</p>
+            <p className="font-bold text-xl   ">Construction Cards Helpline (Communication)</p>
             <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
             <p>
-              We at Construction Duty have very fast responding methods by an email or phone (calls,
+              We at Construction Cards Helpline have very fast responding methods by an email or phone (calls,
               business whatsapp or text messages) we collect the data you have given to us in order
               to reply with the information you need we have automated server which helps you to
               connect soon without any glitch. We only collect information form you with your
@@ -695,6 +695,113 @@ const Privacy = (props: Props) => {
               </div>
               <p>To record the conversation thread during a live chat with our support team.</p>
             </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Personal identifiers from your browsing Activity</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              Requests by your web browser to our servers for web pages and other content on our
+              website are recorded. We record information such as your geographical location, your
+              Internet service provider and your IP address. We also record information about the
+              software you are using to browse our website, such as the type of computer or device
+              and the screen resolution. We use this information in aggregate to assess the
+              popularity of the web pages on our website and how we perform in providing content to
+              you. If combined with other information we know about you from previous visits, the
+              data possibly could be used to identify you personally, even if you are not signed in
+              to our website.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Use of our services by children</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              We do not sell products or provide services for purchase by children, nor do we market
+              to children. Certain areas of our website are designed for use by children over [16]
+              years of age. These areas include [description or name or areas designed for children.
+              If you are under 16, you may use our website only with consent from a parent or
+              guardian. We collect data about all users of and visitors to these areas regardless of
+              age, and we anticipate that some of those users and visitors will be children.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Encryption of data sent between us</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              We use Secure Sockets Layer (SSL) certificates to verify our identity to your browser
+              and to encrypt any data you give us. Whenever information is transferred between us,
+              you can check that it is done so using SSL by looking for a closed padlock symbol or
+              other trust mark in your browser’s URL bar or toolbar.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Complaining</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              {` If you are not happy with our privacy policy, or if you have any complaint, then you
+              should tell us. When we receive a complaint, we record the information you have given
+              to us on the basis of your consent. We use that information to resolve your complaint.
+              For any issues related to your information you have a right to lodge a complaint with
+              the Information Commissioner's Office (ICO). We would, however, appreciate the
+              opportunity to talk to you about your concern before you approach the ICO. You can
+              write us an email at complaint@constructioncardshelpline.com`}
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Limits of our policy</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              Our website may link to external sites that are not operated by us. Please be aware
+              that we have no control over the content and policies of those sites, and cannot
+              accept responsibility or liability for their respective privacy practices.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Compliance with the law</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              Our privacy policy complies with the law in the United Kingdom, specifically with the
+              Data Protection Act 2018 (the ‘Act’) accordingly incorporating the EU General Data
+              Protection Regulation (‘GDPR’) and the Privacy and Electronic Communications
+              Regulations (‘PECR’).
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">Changes to this policy (If Applicable)</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              At our discretion, we may change our privacy policy to reflect updates to our business
+              processes, current acceptable practices, or legislative or regulatory changes. If we
+              decide to change this privacy policy, we will post the changes here at the same link
+              by which you are accessing this privacy policy.
+            </p>
+            <p>
+              If required by law, we will get your permission or give you the opportunity to opt in
+              to or opt out of, as applicable, any new uses of your personal information.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold text-xl   ">CONTACT US</p>
+            <hr className="w-32 h-2 bg-[#ff5e14] rounded-md" />
+            <p>
+              For any query or concerns regarding your privacy, you may contact us using the
+              following details:
+            </p>
+            <p>Construction Cards Helpline</p>
+            <div className="flex items-center gap-2 text-[#ff5e14]">
+              <FaPhone ize={30} />
+              <p>+91 800 0016 122</p>
+            </div>
+            <p className="flex items-center gap-2 text-[#ff5e14]">
+              <AiOutlineMail size={30} />
+              info@constructioncardshelpline.co.uk
+            </p>
           </div>
         </div>
       </Section>

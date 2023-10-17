@@ -64,11 +64,7 @@ const FormSchema = z.object({
   selecttest: z.string({
     required_error: "Please select an test to display.",
   }),
-  selectlang: z
-    .string({
-      required_error: "Please select an Language to test.",
-    })
-    .optional(),
+  selectlang: z.string().optional(),
   preferredtime: z.string({
     required_error: "Please select Prefered Time for test.",
   }),

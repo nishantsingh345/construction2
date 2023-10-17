@@ -240,9 +240,9 @@ const CitbForm = (props: Props) => {
                     name="insurence"
                     render={({ field }) => (
                       <FormItem className="w-full space-y-1">
-                        <FormLabel>Insurence No.*</FormLabel>
+                        <FormLabel>National Insurance No.*</FormLabel>
                         <FormControl>
-                          <Input placeholder="Insurence Number" type="text" {...field} />
+                          <Input placeholder="National Insurance No.*" type="text" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

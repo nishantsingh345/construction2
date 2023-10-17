@@ -104,10 +104,7 @@ const Revisinoal = (props: Props) => {
       <Section>
         <div className="border-slate-700 border-2 p-3 rounded-md">
           <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="w-full space-y-4"
-            >
+            <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-4">
               <div className="w-full space-y-4 border-2 border-slate-700 p-3 rounded-md">
                 <p className="font-bold space-y-2 text-2xl">Persnoal Details</p>
                 <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
@@ -146,11 +143,7 @@ const Revisinoal = (props: Props) => {
                       <FormItem className="w-full space-y-1">
                         <FormLabel>Birth Of Date*</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Birth of Date"
-                            type="date"
-                            {...field}
-                          />
+                          <Input placeholder="Birth of Date" type="date" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -163,11 +156,7 @@ const Revisinoal = (props: Props) => {
                       <FormItem className="w-full space-y-1">
                         <FormLabel>Mobile*</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Number"
-                            type="number"
-                            {...field}
-                          />
+                          <Input placeholder="Number" type="number" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -195,11 +184,7 @@ const Revisinoal = (props: Props) => {
                       <FormItem className="w-full space-y-1">
                         <FormLabel>Postcode*</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Postcode"
-                            type="text"
-                            {...field}
-                          />
+                          <Input placeholder="Postcode" type="text" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -225,13 +210,9 @@ const Revisinoal = (props: Props) => {
                     name="insurence"
                     render={({ field }) => (
                       <FormItem className="w-full space-y-1">
-                        <FormLabel>Insurence No.*</FormLabel>
+                        <FormLabel>National Insurance No.*</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Insurence Number"
-                            type="text"
-                            {...field}
-                          />
+                          <Input placeholder="National Insurance No.*" type="text" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -258,22 +239,15 @@ const Revisinoal = (props: Props) => {
                                 key={item.id}
                                 className="flex  items-start md:items-center  py-3 gap-2 justify-between"
                               >
-                                <FormLabel className="font-normal">
-                                  {item.label}
-                                </FormLabel>
+                                <FormLabel className="font-normal">{item.label}</FormLabel>
                                 <FormControl>
                                   <Checkbox
                                     checked={field.value?.includes(item.id)}
                                     onCheckedChange={(checked) => {
                                       return checked
-                                        ? field.onChange([
-                                            ...field.value,
-                                            item.id,
-                                          ])
+                                        ? field.onChange([...field.value, item.id])
                                         : field.onChange(
-                                            field.value?.filter(
-                                              (value) => value !== item.id
-                                            )
+                                            field.value?.filter((value) => value !== item.id)
                                           );
                                     }}
                                   />
@@ -289,11 +263,7 @@ const Revisinoal = (props: Props) => {
                 />
               </div>
               <div className="flex items-center justify-center">
-                <Button
-                  className="bg-[#ff5e14] hover:bg-[#ff5e14]/90"
-                  size="lg"
-                  type="submit"
-                >
+                <Button className="bg-[#ff5e14] hover:bg-[#ff5e14]/90" size="lg" type="submit">
                   PROCEED
                 </Button>
               </div>

@@ -79,6 +79,7 @@ const FormSchema = z.object({
   items: z.array(z.string()).refine((value) => value.some((item) => item), {
     message: "You have to select at least one item.",
   }),
+  retaketest: z.boolean().default(false).optional(),
 });
 
 type Props = {};
@@ -91,7 +92,19 @@ const CitbForm = (props: Props) => {
     defaultValues: {
       firstName: "",
       lastname: "",
+      birthdate: "",
+      number: "",
+      email: "",
+      postcode: "",
+      postcodetest: "",
+      address: "",
+      insurence: "",
+      selectlang: "",
+      preferredtime: "",
+      testcenter: "",
+      preferreddate: "",
       items: [],
+      retaketest: true,
     },
   });
   const { watch } = form;
@@ -347,7 +360,6 @@ const CitbForm = (props: Props) => {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="09:00 To 10:00 AM">09:00 To 10:00 AM</SelectItem>
                             <SelectItem value="09:00 To 10:00 AM">11:00 To 12:00 AM</SelectItem>
                           </SelectContent>
                         </Select>
@@ -410,15 +422,20 @@ const CitbForm = (props: Props) => {
                   />
                 </div>
 
-                <div className="flex items-center space-x-2">
-                  <Checkbox id="terms" />
-                  <label
-                    htmlFor="terms"
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    Accept terms and conditions
-                  </label>
-                </div>
+                <FormField
+                  control={form.control}
+                  name="retaketest"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+                      <FormControl>
+                        <Checkbox checked={field.value} onCheckedChange={field.onChange} />
+                      </FormControl>
+                      <div className="space-y-1 leading-none">
+                        <FormLabel>Opt in for retake (*Additional charges applicable)</FormLabel>
+                      </div>
+                    </FormItem>
+                  )}
+                />
               </div>
 
               <div className="w-full space-y-4 border-2 border-slate-700 p-3 rounded-md">

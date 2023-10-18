@@ -19,20 +19,20 @@ const Navbar = (props: Props) => {
       <Section>
         <nav>
           {/* Desktop Menue */}
-          <div className="flex items-center justify-between py-2">
+          <div className="flex items-center justify-between py-2 relative">
             <Link href="/">
               <img className="w-40 md:w-60" src="/logo2.png" alt="" />
             </Link>
 
             <div className="text-black md:flex hidden">
               <ul className="flex items-center">
-                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
+                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10  cursor-pointer">
                   <Link href="/"> Home</Link>
                 </li>
-                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
+                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10  cursor-pointer">
                   <Link href="/about"> About</Link>
                 </li>
-                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 text-xl cursor-pointer">
+                <li className="uppercase  border-b border-[#040f28] hover:border-orange-500 ml-10 cursor-pointer">
                   <Link href="/contact"> Contact</Link>
                 </li>
               </ul>
@@ -57,8 +57,8 @@ const Navbar = (props: Props) => {
           <div
             className={
               menuOpen
-                ? "fixed top-[119px] left-0 w-[75%] md:hidden h-screen bg-gray-300 p-[20px] ease-in-out duration-500"
-                : "fixed left-[-100%] top-[119px] p-[20px] ease-in-out duration-500"
+                ? "absolute top-0 left-0 w-[75%] md:hidden h-screen bg-gray-100 p-[20px] ease-in-out duration-500"
+                : "absolute top-0 left-[-100%]  p-[20px] ease-in-out duration-500"
             }
           >
             <div className="w-full flex items-center justify-end">

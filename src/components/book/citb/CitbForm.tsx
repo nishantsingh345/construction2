@@ -72,12 +72,9 @@ const FormSchema = z.object({
     required_error: "Please select Test Center for test.",
   }),
   preferreddate: z.string().min(1).max(50),
-  items: z
-    .array(z.string())
-    .refine((value) => value.some((item) => item), {
-      message: "You have to select at least one item.",
-    })
-    .optional(),
+  items: z.array(z.string()).refine((value) => value.some((item) => item), {
+    message: "You have to select at least one item.",
+  }),
   retaketest: z.boolean().default(false).optional(),
 });
 

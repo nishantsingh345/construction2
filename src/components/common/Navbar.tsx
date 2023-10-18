@@ -38,7 +38,7 @@ const Navbar = (props: Props) => {
               </ul>
             </div>
 
-            <div className="bg-[#ff5e14]  hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-4 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
+            <div className="bg-[#ff5e14] hidden md:flex  hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-4 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
               Apply
             </div>
 
@@ -57,7 +57,7 @@ const Navbar = (props: Props) => {
           <div
             className={
               menuOpen
-                ? "absolute top-0 left-0 w-[75%] md:hidden h-screen bg-gray-100 p-[20px] ease-in-out duration-500"
+                ? "absolute top-0 left-0 w-[75%] md:hidden h-screen bg-white p-[20px] ease-in-out duration-500"
                 : "absolute top-0 left-[-100%]  p-[20px] ease-in-out duration-500"
             }
           >
@@ -88,6 +88,9 @@ const Navbar = (props: Props) => {
                   <Link href="/contact"> Contact</Link>
                 </li>
               </ul>
+            </div>
+            <div className="bg-[#ff5e14]  flex items-center justify-center   hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-2 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
+              Apply
             </div>
           </div>
         </nav>

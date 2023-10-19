@@ -41,10 +41,10 @@ const Stat = (props: Props) => {
   return (
     <div className=" stickyImgslat">
       <Section>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 sm:gap-5 gap-2">
           {card.map((item, index) => (
             <div key={index}>
-              <div className="bg-white p-5 flex flex-col gap-2 items-center justify-center w-[130px] mx-auto">
+              <div className="bg-white p-5 flex flex-col gap-2 rounded-t-md items-center justify-center w-[130px] mx-auto">
                 <div>
                   <img src={item?.img} alt="" />
                   <div className="flex items-center gap-2 text-2xl text-[#ff5e14] font-bold">
@@ -52,7 +52,7 @@ const Stat = (props: Props) => {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#ff5e14] md:px-4 px-2 md:py-3 py-2 text-lg text-white font-bold md:text-xl">
+              <div className="bg-[#ff5e14] sm:px-4  md:py-3 py-2 rounded-md text-white font-bold md:text-xl text-sm">
                 <p className="text-center">{item?.btn}</p>
               </div>
             </div>

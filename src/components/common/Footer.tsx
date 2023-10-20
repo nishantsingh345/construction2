@@ -60,9 +60,10 @@ function Footer() {
               <img className="w-56" src="/logo1.jpeg" alt="" />
               <div className="flex flex-col gap-4 ">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum culpa dicta
-                  nesciunt tempora nam eligendi repudiandae nisi, possimus commodi quasi maiores
-                  autem dolor fugit. Ipsum necessitatibus veritatis impedit facilis eveniet.
+                  Construction card helpline is just not a name but the word itself defines it
+                  means, a duty in the construction industry that imparts knowledge and guidance on
+                  Health and Safety, risk management on construction sites to the labourer,
+                  tradesmen, and visitors to involve in the area of the construction sector.
                 </p>
               </div>
             </div>

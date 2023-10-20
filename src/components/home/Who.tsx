@@ -19,10 +19,10 @@ const Who = (props: Props) => {
           <div className="flex flex-col space-y-6 w-full">
             <p className="font-bold text-[#ff5e14] text-2xl md:text-3xl">Who We Are?</p>
             <p>
-              Construction Duty is just not a name but the word itself defines it means, a duty in
+              Construction  card helpline is just not a name but the word itself defines it means, a duty in
               the construction industry that imparts knowledge and guidance on Health and Safety,
               risk management on construction sites to the labourer, tradesmen, and visitors to
-              involve in the area of the construction sector. Construction Duty is one of the
+              involve in the area of the construction sector. Construction  card helpline is one of the
               prominent consulting firms in the UK which gives appropriate information in the
               construction industry to make the site safer and risk-free.
             </p>

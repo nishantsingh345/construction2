@@ -26,7 +26,7 @@ const Note = (props: Props) => {
             <p>
               You must have completed the CITB HS&E Test within the last 2 years to apply for a CSCS
               Card. You can apply for a New Card, renew or request a replacement for lost CSCS card.
-              This is an application for a CSCS Card through Construction Duty, an online provider
+              This is an application for a CSCS Card through Construction  card helpline, an online provider
               of bookings, applications and training.
             </p>
           </div>

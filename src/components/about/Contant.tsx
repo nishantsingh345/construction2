@@ -25,7 +25,7 @@ const Contant = (props: Props) => {
           </p>
 
           <p>
-            Construction Duty offers a complete solution on applying for CSCS Cards , NVQ Trainings,
+            Construction  card helpline offers a complete solution on applying for CSCS Cards , NVQ Trainings,
             Health and Safety Course if you are looking to work within the construction site then
             you require a CSCS card which is the identity that proofs you are trained and educated
             to work on risk management and safety procedures at a construction site. Our motive is
@@ -40,7 +40,7 @@ const Contant = (props: Props) => {
             centres which can help you to plan your test accordingly.`}
           </p>
           <p>
-            Construction Duty has a vast experience in imparting knowledge on construction job
+            Construction  card helpline has a vast experience in imparting knowledge on construction job
             related to Health and Safety work on sites, with the team of professionals we provide
             all the services related to CITB, Green Labourer Card Course , CSCS cards , NVQ pieces
             of training which are the most important part of the construction sector. We provide

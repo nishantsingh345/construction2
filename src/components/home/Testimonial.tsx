@@ -21,32 +21,20 @@ const data = [
   {
     id: 1,
     immg: "https://freesvg.org/img/1458084029.png",
-    title: "first slide",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, modi odio reprehenderit deserunt facilis sapiente recusandae? Quibusdam deleniti perferendis officiis?",
+    title: "James Martin",
+    text: "anima ex mane vere anima hi qui anima, ex mane vere anima hi qui anima, ex mane vere anima anima hi qui te in toto . Ego sum , et in de macula, mei. Sum tam felix, tam in sit Sum tam felix felix, ut talenta. Ut felix hoc tempore;",
   },
   {
-    id: 2,
+    id: 1,
     immg: "https://freesvg.org/img/1458084029.png",
-    title: "first slide",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, modi odio reprehenderit deserunt facilis sapiente recusandae? Quibusdam deleniti perferendis officiis?",
+    title: "James Martin",
+    text: "anima ex mane vere anima hi qui anima, ex mane vere anima hi qui anima, ex mane vere anima anima hi qui te in toto . Ego sum , et in de macula, mei. Sum tam felix, tam in sit Sum tam felix felix, ut talenta. Ut felix hoc tempore;",
   },
   {
-    id: 3,
+    id: 1,
     immg: "https://freesvg.org/img/1458084029.png",
-    title: "first slide",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, modi odio reprehenderit deserunt facilis sapiente recusandae? Quibusdam deleniti perferendis officiis?",
-  },
-  {
-    id: 4,
-    immg: "https://freesvg.org/img/1458084029.png",
-    title: "first slide",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, modi odio reprehenderit deserunt facilis sapiente recusandae? Quibusdam deleniti perferendis officiis?",
-  },
-  {
-    id: 4,
-    immg: "https://freesvg.org/img/1458084029.png",
-    title: "first slide",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, modi odio reprehenderit deserunt facilis sapiente recusandae? Quibusdam deleniti perferendis officiis?",
+    title: "James Martin",
+    text: "anima ex mane vere anima hi qui anima, ex mane vere anima hi qui anima, ex mane vere anima anima hi qui te in toto . Ego sum , et in de macula, mei. Sum tam felix, tam in sit Sum tam felix felix, ut talenta. Ut felix hoc tempore;",
   },
 ];
 

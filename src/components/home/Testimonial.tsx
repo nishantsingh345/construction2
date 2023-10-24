@@ -50,8 +50,8 @@ const Testimonial = (props: Props) => {
             </p>
           </div> */}
 
-          <div className="bg-[url('/testimonialsbg1.jpg')]  w-full py-6">
-            <div className="flex items-center justify-center">
+          <div className="bg-[url('/testimonialsbg1.jpg')]  w-full py-6 ">
+            <div className="flex items-center justify-center ">
               <div className="bg-[#ff5e14] p-5 flex-col items-center gap-2">
                 <img className="mx-auto" src="/titleicon.png" alt="" />
                 <p className="font-bold text-center text-2xl py-3 text-white">Our Testimonial</p>

@@ -28,6 +28,9 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 
+import { loadStripe } from "@stripe/stripe-js";
+import { Value } from "@radix-ui/react-select";
+
 const items = [
   {
     id: "hS&Ebook",
@@ -123,6 +126,37 @@ const CitbForm = (props: Props) => {
         </pre>
       ),
     });
+  };
+
+  //inigrate make payment
+
+  const makepayment = async () => {
+    const stripe = await loadStripe(
+      "pk_test_51O55X4SHaPS1K3FEpURQF2oqJ8qyFpZdcJMBD6cXmiYnmMWEJjE9JxMVzKhWQQRK77EgYBLtlRLSPQJJiZ7mGHzk00PgXaQXqI"
+    );
+
+    const body = {
+      products: onSubmit,
+    };
+
+    const headers = {
+      "Content-Type": "application/json",
+    };
+
+    const response = await fetch("http://localhost:7000/api/create-checkout-session", {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify(body),
+    });
+
+    const session = await response.json();
+    const result = stripe?.redirectToCheckout({
+      sessionId: session.id,
+    });
+
+    if (result.error) {
+      console.log(result.error);
+    }
   };
 
   return (
@@ -476,7 +510,12 @@ const CitbForm = (props: Props) => {
                 />
               </div>
               <div className="flex items-center justify-center">
-                <Button className="bg-[#ff5e14] hover:bg-[#ff5e14]/90" size="lg" type="submit">
+                <Button
+                  onClick={makepayment}
+                  className="bg-[#ff5e14] hover:bg-[#ff5e14]/90"
+                  size="lg"
+                  type="submit"
+                >
                   PROCEED
                 </Button>
               </div>

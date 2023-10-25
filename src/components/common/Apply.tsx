@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import { BsStars } from "react-icons/bs";
+import Link from "next/link";
 
 type Props = {};
 
@@ -14,9 +15,12 @@ const Apply = (props: Props) => {
             <p className="font-bold text-white text-xl"> Feel free to apply now </p>
             <BsStars size={25} />
           </div>
-          <div className="bg-[#ff5e14]  hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-4 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
+          <Link
+            href="/citb/book-now"
+            className="bg-[#ff5e14]  hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-4 py-2 rounded-lg cursor-pointer ease-in-out duration-300"
+          >
             Apply
-          </div>
+          </Link>
         </div>
       </Section>
     </div>

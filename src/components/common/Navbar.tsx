@@ -38,9 +38,12 @@ const Navbar = (props: Props) => {
               </ul>
             </div>
 
-            <div className="bg-[#ff5e14] hidden md:flex  hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-4 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
+            <Link
+              href="citb/book-now"
+              className="bg-[#ff5e14] hidden md:flex  hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-4 py-2 rounded-lg cursor-pointer ease-in-out duration-300"
+            >
               Apply
-            </div>
+            </Link>
 
             {/* Mobile menue */}
 
@@ -89,9 +92,12 @@ const Navbar = (props: Props) => {
                 </li>
               </ul>
             </div>
-            <div className="bg-[#ff5e14]  flex items-center justify-center hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-2 py-2 rounded-lg cursor-pointer ease-in-out duration-300">
+            <Link
+              href="citb/book-now"
+              className="bg-[#ff5e14]  flex items-center justify-center hover:bg-[#ff5e14]/90 text-white font-semibold text-2xl px-2 py-2 rounded-lg cursor-pointer ease-in-out duration-300"
+            >
               Apply
-            </div>
+            </Link>
           </div>
         </nav>
       </Section>
